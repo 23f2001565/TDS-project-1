@@ -18,7 +18,7 @@ app = FastAPI()
 
 
 OPENAI_API_URL = "http://aiproxy.sanand.workers.dev/openai/v1/chat/completions"
-API_KEY = os.getenv("OPENAI_API_KEY")  
+API_KEY = os.getenv("AI_API_KEY")  
 
 if not API_KEY:
     raise ValueError("❌ OPENAI_API_KEY is not set in your .env file")
