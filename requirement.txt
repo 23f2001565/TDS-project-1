@@ -3,3 +3,5 @@ uvicorn
 playwright
 bs4
 dotenv
+numpy
+faiss
