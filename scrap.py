@@ -107,7 +107,7 @@ def scrap(p):
                     "content": BeautifulSoup(post["cooked"], "html.parser").get_text()
                 })
     print(d)
-   os.makedirs("data", exist_ok=True)
+    os.makedirs("data", exist_ok=True)
     with open("data/raw_data.json",'w') as f:
         json.dump(filtered_post,f,indent=4)
     b.close()
