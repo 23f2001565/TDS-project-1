@@ -7,6 +7,7 @@ from PIL import Image
 import pytesseract
 import sys
 import os
+from mangum import Mangum
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from retriever import SubthreadRetriever
@@ -69,3 +70,5 @@ async def handler(query: Query):
         }
     except Exception as e:
         return JSONResponse(status_code=500, content={"error": str(e)})
+
+handler = Mangum(app)
