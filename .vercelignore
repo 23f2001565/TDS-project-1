@@ -1,0 +1,26 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Local data, large files
+faiss.index
+data/
+cookie.json
+
+# Local environment and secrets
+.env
+tdsenv/
+
+# Not needed for deployment
+.scrap.py
+embed_data.py
+context_builder.py
+retriever.py  # Only include if not needed directly in production
+
+# Vercel + dev environment
+.git/
+.vscode/
+.idea/
+*.log
+*.db
