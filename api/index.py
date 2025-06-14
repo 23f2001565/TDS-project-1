@@ -42,7 +42,7 @@ def extract_text(base64_str):
     except Exception as e:
         return f"OCR Error: {e}"
 
-@app.post("/api/")
+@app.post("/")
 async def handler(query: Query):
     q = query.question
     if query.image:
