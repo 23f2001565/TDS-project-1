@@ -5,11 +5,8 @@ import base64, os, requests
 from io import BytesIO
 from PIL import Image
 import pytesseract
-import sys
 import os
 from mangum import Mangum
-
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from retriever import SubthreadRetriever
 from context_builder import build_context
 from dotenv import load_dotenv

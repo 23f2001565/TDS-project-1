@@ -4,6 +4,6 @@ playwright
 bs4
 dotenv
 numpy
-faiss
+#faiss
 pytesseract
 mangum

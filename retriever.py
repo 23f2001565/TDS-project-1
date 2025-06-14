@@ -7,7 +7,7 @@ print(os.getcwd())  # e.g. "/Users/Shared/TDS-project-1"
 
 
 class SubthreadRetriever:
-    def __init__(self, index_path="../faiss.index", meta_path="../data/metadata.json", model_name="all-MiniLM-L6-v2"):
+    def __init__(self, index_path="faiss.index", meta_path="data/metadata.json", model_name="all-MiniLM-L6-v2"):
         self.model = SentenceTransformer(model_name)
         self.index = faiss.read_index(index_path)
         with open(meta_path) as f:
