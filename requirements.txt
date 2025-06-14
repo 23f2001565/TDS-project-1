@@ -5,6 +5,6 @@ playwright
 bs4
 dotenv
 numpy
-#faiss
+faiss-cpu
 pytesseract
 mangum
