@@ -5,8 +5,10 @@ import base64, os, requests
 from io import BytesIO
 from PIL import Image
 import pytesseract
+import sys
 import os
 from mangum import Mangum
+
 from retriever import SubthreadRetriever
 from context_builder import build_context
 from dotenv import load_dotenv
