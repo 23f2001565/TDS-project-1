@@ -8,7 +8,7 @@ import pytesseract
 import sys
 import os
 from mangum import Mangum
-
+import uvicorn
 from retriever import SubthreadRetriever
 from context_builder import build_context
 from dotenv import load_dotenv
@@ -69,5 +69,10 @@ async def handler(query: Query):
         }
     except Exception as e:
         return JSONResponse(status_code=500, content={"error": str(e)})
-
+    
+    
 handler = Mangum(app)
+
+if __name__ == "__main__":
+    uvicorn.run("index:app", host="0.0.0.0", port=8000)
+
