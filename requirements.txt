@@ -1,10 +1,7 @@
 fastapi
 uvicorn
 requests
-playwright
-bs4
 dotenv
-numpy
 faiss-cpu
 pytesseract
 mangum
